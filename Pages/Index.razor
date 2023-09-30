@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using blazor_server_dashboard.Data.Models;
+@using blazor_server_dashboard.Services
+@inject UserService userService
 
 <PageTitle>Index</PageTitle>
 
@@ -7,3 +10,24 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<EditForm Model="@user" OnValidSubmit="HandleSubmit">
+    <InputText id="FirstNameInput" @bind-Value="user.FirstName" placeholder="Enter first name"></InputText>
+    <InputText id="LastNameInput" @bind-Value="user.LastName" placeholder="Enter last name"></InputText>
+    <button type="submit" class="btn-primary">Create Profile</button>
+</EditForm>
+
+@code{
+    private User user = new User();
+
+    public void HandleSubmit(EditContext editContext)
+    {
+        var newUser = (User)editContext.Model;
+        userService.AddUser(newUser);
+    }
+
+
+
+
+
+}
