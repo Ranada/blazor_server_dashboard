@@ -7,5 +7,6 @@ namespace blazor_server_dashboard.Data.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public List<Trip> Trips { get; set; } = new List<Trip>();  
     }
 }

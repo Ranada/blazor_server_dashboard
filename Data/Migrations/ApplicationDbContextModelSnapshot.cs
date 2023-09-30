@@ -232,6 +232,41 @@ namespace blazor_server_dashboard.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("TripUser", b =>
+                {
+                    b.Property<string>("TravelersId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("TripsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TravelersId", "TripsId");
+
+                    b.HasIndex("TripsId");
+
+                    b.ToTable("TripUser");
+                });
+
+            modelBuilder.Entity("blazor_server_dashboard.Data.Models.Trip", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("NumberOfDays")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TripName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trips");
+                });
+
             modelBuilder.Entity("blazor_server_dashboard.Data.Models.User", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
@@ -294,6 +329,21 @@ namespace blazor_server_dashboard.Data.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TripUser", b =>
+                {
+                    b.HasOne("blazor_server_dashboard.Data.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("TravelersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("blazor_server_dashboard.Data.Models.Trip", null)
+                        .WithMany()
+                        .HasForeignKey("TripsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

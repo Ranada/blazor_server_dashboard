@@ -22,9 +22,8 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
 
-var connectionstring = builder.Configuration.GetConnectionString("default")
+var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new NullReferenceException("No connection string in configuration file.");
-Console.WriteLine("Connections string {0}", connectionstring);
 builder.Services.AddDbContextFactory<ApplicationDbContext>(options => options.UseSqlServer(connectionstring));
 
 var app = builder.Build();
