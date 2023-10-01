@@ -1,5 +1,4 @@
-﻿using blazor_server_dashboard.Data.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 
@@ -11,6 +10,5 @@ namespace blazor_server_dashboard.Data
             : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
     }
 }
