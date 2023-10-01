@@ -67,7 +67,6 @@ C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboa
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.RazorAssemblyInfo.cache
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.RazorAssemblyInfo.cs
-C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.sourcelink.json
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\staticwebassets\msbuild.blazor_server_dashboard.Microsoft.AspNetCore.StaticWebAssets.props
