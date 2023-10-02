@@ -84,3 +84,4 @@ C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboa
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.pdb
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.genruntimeconfig.cache
 C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\ref\blazor_server_dashboard.dll
+C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net7.0\blazor_server_dashboard.sourcelink.json

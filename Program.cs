@@ -25,6 +25,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new NullReferenceException("No connection string in configuration file.");
 builder.Services.AddDbContextFactory<ApplicationDbContext>(options => options.UseSqlServer(connectionstring));
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
