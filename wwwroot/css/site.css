@@ -74,8 +74,9 @@ a, .btn-link {
 
 /* Style for individual tiles */
 .dashboard-tile {
-    width: 240px;
+    width: 220px;
     min-height: 100px;
+    border-color: lightgray;
 }
 
 section {
