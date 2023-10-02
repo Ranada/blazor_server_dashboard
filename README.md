@@ -25,4 +25,4 @@ https://www.linkedin.com/in/neilranada/
 
 ### Thanks for stopping by!
 
-<span><img alt='Yoko Digital Logo' src='./Public/Images/yoko-digital-logo-while.svg' width='40px'></span>
+Neil Ranada, C# ASP.NET Core Developer
