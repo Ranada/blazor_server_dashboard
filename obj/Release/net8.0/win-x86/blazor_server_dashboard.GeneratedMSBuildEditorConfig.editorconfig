@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/QuickGridData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpY2tHcmlkRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/QuickGridSample.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpY2tHcmlkU2FtcGxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
