@@ -2,27 +2,41 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Images will go in this grid of placeholder dog photos</h1>
-
-<div class="container d-flex flex-wrap">
-    @if (dogsUrl == null)
-    {
-        <h3>Fetching dog photos...</h3>
-    }
-    else
-    {
-        foreach (var dog in dogsUrl)
-        {
-            <div class="col-md-4 mb-4">
-                <div style="background-image: url('@dog.message'); background-size: cover; width: 300px; height: 200px;"></div>
-
+<div class="container">
+    <section>
+        <h1 class="mb-3">Dashboard</h1>
+            <div class="d-flex">
+                <div class="dashboard-tile shadow border p-2 me-3 rounded"><h4>Low priority</h4></div>
+                <div class="dashboard-tile shadow border p-2 me-3 rounded"><h4>Medium priority</h4></div>
+                <div class="dashboard-tile shadow border p-2 me-3 rounded"><h4>High priority</h4></div>
+                <div class="dashboard-tile shadow border p-2 me-3 rounded"><h4>Total</h4></div>
             </div>
-        }
-    }
+    </section>
+    <section>
+        <h2>Table data will go in this QuickGrid</h2>
+        <QuickGridSample></QuickGridSample>
+    </section>
+    <section>
+        <h2>Image grid with dog photo placeholders</h2>
+        <div class="container d-flex flex-wrap">
+            @if (dogsUrl == null)
+            {
+                <h3>Fetching dog photos...</h3>
+            }
+            else
+            {
+                foreach (var dog in dogsUrl)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div style="background-image: url('@dog.message'); background-size: cover; width: 300px; height: 200px;"></div>
+
+                    </div>
+                }
+            }
+        </div>
+    </section>
 </div>
 
-<h2>Table data will go in this QuickGrid</h2>
-<QuickGridSample></QuickGridSample>
 
 @code {
     public HttpClient httpClient = new();

@@ -66,3 +66,18 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/* Style for the container div */
+.dashboard-container {
+    display: flex;
+}
+
+/* Style for individual tiles */
+.dashboard-tile {
+    width: 240px;
+    min-height: 100px;
+}
+
+section {
+    margin-bottom: 60px;
+}
