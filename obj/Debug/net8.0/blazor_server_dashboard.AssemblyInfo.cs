@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor_server_dashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ac4460c9b80564c6aa1b7f89b1298a3720a5c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor_server_dashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor_server_dashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
