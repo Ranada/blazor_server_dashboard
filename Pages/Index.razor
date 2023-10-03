@@ -1,73 +1,29 @@
 ﻿@page "/"
+@using blazor_server_dashboard.Data.Models;
 
 <PageTitle>Index</PageTitle>
 
-<div class="container">
-    <section>
-        <h1 class="mb-3">Dashboard</h1>
-            <div class="d-flex flex-wrap">
-                <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-                    <h3>3</h3>
-                    <p>Low priority</p></div>
-                <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-                    <h3>3</h3>
-                    <p>Medium priority</p></div>
-                <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-                    <h3>1</h3>
-                    <p>High priority</p></div>
-            <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-                <h3>7</h3>
-                <h5>Total</h5></div>
-            </div>
-    </section>
-    <section>
-        <h2>Quick Grid Tracker</h2>
-        <QuickGridData></QuickGridData>
-    </section>
-    @* <section>
-        <h2>Image grid with dog photo placeholders</h2>
-        <div class="container d-flex flex-wrap">
-            @if (dogsUrl == null)
-            {
-                <h3>Fetching dog photos...</h3>
-            }
-            else
-            {
-                foreach (var dog in dogsUrl)
-                {
-                    <div class="col-md-4 mb-4">
-                        <div style="background-image: url('@dog.message'); background-size: cover; width: 300px; height: 200px;"></div>
-
-                    </div>
-                }
-            }
-        </div>
-    </section> *@
-</div>
-
+<CascadingValue Value="@mockData">
+    <div class="container">
+        <h1>Dashboard</h1>
+        <section>
+            <DashboardTiles />
+        </section>
+        <section>
+            <QuickGridData />
+        </section>
+    </div>
+</CascadingValue>
 
 @code {
-    public HttpClient httpClient = new();
-    private List<Dog> dogsUrl = new();
-
-    protected override async Task OnInitializedAsync()
+    public IQueryable<MockData> mockData = new[]
     {
-        for (int i = 0; i < 9; i++)
-        {
-            var dogDataResponse = await httpClient.GetFromJsonAsync<Dog>("https://dog.ceo/api/breeds/image/random");
-
-            if (dogDataResponse != null)
-            {
-                dogsUrl.Add(dogDataResponse);
-            }
-        }
-        
-    }
-
-    class Dog
-    {
-        public string? message { get; set; }
-        public string? status { get; set; }
-
-    }
+        new MockData(1, "Item description goes here.", "Neil Ranada", "Katelyn Pham", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(2, "Item description goes here.", "Neil Ranada", "Vann Diego", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(3, "Item description goes here.", "Keisha Weiland", "Katelyn Pham", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(4, "Item description goes here.", "Neil Ranada", "Billy Dietz", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(5, "Item description goes here.", "Keisha Weiland", "Diane Basham", "High", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(6, "Item description goes here.", "Neil Ranada", "Tammy Wescott", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
+        new MockData(7, "Item description goes here.", "Grace Hopper", "Cobie Encinas", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16))
+    }.AsQueryable();
 }

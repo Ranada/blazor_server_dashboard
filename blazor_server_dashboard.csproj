@@ -17,8 +17,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\Models\" />
-  </ItemGroup>
-
 </Project>

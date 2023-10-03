@@ -1,0 +1,30 @@
+﻿@using blazor_server_dashboard.Data.Models;
+
+<div class="d-flex flex-wrap">
+    <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
+        <h3>@mockData.Count(item => item.Priority == "Low")</h3>
+        <p>Low priority</p>
+    </div>
+    <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
+        <h3>@mockData.Count(item => item.Priority == "Medium")</h3>
+        <p>Medium priority</p>
+    </div>
+    <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
+        <h3>@mockData.Count(item => item.Priority == "High")</h3>
+        <p>High priority</p>
+    </div>
+    <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
+        <h3>@mockData.Count(item => item.Priority == "Low" || item.Priority == "Medium" || item.Priority == "High")</h3>
+        <h5>Total</h5>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    public IQueryable<MockData>? mockData { get; set; }
+
+    // public int lowPriorityCount { get; set; }
+    // public int mediumPriorityCount { get; set; }
+    // public int highPriorityCount { get; set; }
+    // public int totalCount { get; set; }
+}
