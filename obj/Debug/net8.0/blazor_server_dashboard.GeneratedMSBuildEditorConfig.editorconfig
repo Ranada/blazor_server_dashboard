@@ -26,8 +26,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/DashboardTiles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkVGlsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/ImageGrid.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1hZ2VHcmlkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/Index.razor]

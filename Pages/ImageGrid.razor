@@ -1,0 +1,43 @@
+﻿<h3>ImageGrid</h3>
+
+<div class="container d-flex flex-wrap">
+    @if (dogsUrl == null)
+    {
+        <h3>Fetching dog photos...</h3>
+    }
+    else
+    {
+        foreach (var dog in dogsUrl)
+        {
+            <div class="col-md-4 mb-4">
+                <div style="background-image: url('@dog.message'); background-size: cover; width: 300px; height: 200px;"></div>
+
+            </div>
+        }
+    }
+</div>
+
+@code {
+    public HttpClient httpClient = new();
+    private List<Dog> dogsUrl = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            var dogDataResponse = await httpClient.GetFromJsonAsync<Dog>("https://dog.ceo/api/breeds/image/random");
+
+            if (dogDataResponse != null)
+            {
+                dogsUrl.Add(dogDataResponse);
+            }
+        }
+    }
+
+    class Dog
+    {
+        public string? message { get; set; }
+        public string? status { get; set; }
+
+    }
+}

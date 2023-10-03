@@ -1,9 +1,12 @@
 ﻿@page "/quickgrid-data"
 @using Microsoft.AspNetCore.Components.QuickGrid
+@using blazor_server_dashboard.Data.Models;
 
-<QuickGrid Items="@items">
+<h2>Quick Grid Tracker</h2>
+
+<QuickGrid Items="@mockData">
     <PropertyColumn Property="@(i => i.Id)" Sortable="true" />
-    <PropertyColumn Property="@(i => i.Description)" Sortable="true" />
+    <PropertyColumn Property="@(i => i.Description)" Sortable="true"/>
     <PropertyColumn Property="@(i => i.AssignedBy)" Sortable="true" />
     <PropertyColumn Property="@(i => i.AssignedTo)" Sortable="true" />
     <PropertyColumn Property="@(i => i.Priority)" Sortable="true" />
@@ -13,16 +16,6 @@
 </QuickGrid>
 
 @code {
-    private record Item(int Id, string? Description, string? AssignedBy, string? AssignedTo, string? Priority, DateTime? StartDate, DateOnly? CompletionDate, DateOnly? DueDate);
-
-    private IQueryable<Item> items = new[]
-    {
-        new Item(1, "Item description goes here.", "Neil Ranada", "Katelyn Pham", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(2, "Item description goes here.", "Neil Ranada", "Vann Diego", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(3, "Item description goes here.", "Keisha Weiland", "Katelyn Pham", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(4, "Item description goes here.", "Neil Ranada", "Billy Dietz", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(5, "Item description goes here.", "Keisha Weiland", "Diane Basham", "High", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(6, "Item description goes here.", "Neil Ranada", "Tammy Wescott", "Medium", DateTime.Now, null, new DateOnly(1985, 3, 16)),
-        new Item(7, "Item description goes here.", "Grace Hopper", "Cobie Encinas", "Low", DateTime.Now, null, new DateOnly(1985, 3, 16))
-    }.AsQueryable();
+    [CascadingParameter]
+    public IQueryable<MockData>? mockData { get; set; }
 }
