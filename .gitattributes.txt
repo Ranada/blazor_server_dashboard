@@ -1,1 +1,2 @@
-*.css linguist-detectable=false
+*/wwwroot/css/bootstrap/* linguist-vendored
+*.cs linguist-vendored=false
