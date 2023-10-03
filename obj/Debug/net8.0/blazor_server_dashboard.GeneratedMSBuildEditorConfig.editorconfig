@@ -22,16 +22,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/DashboardTiles.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkVGlsZXMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/ImageGrid.razor]
@@ -44,10 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/QuickGridData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpY2tHcmlkRGF0YS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Pages/QuickGridSample.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpY2tHcmlkU2FtcGxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/neilr/OneDrive/professional/development/portfolio/blazor_server_dashboard/Shared/LoginDisplay.razor]
