@@ -2,20 +2,34 @@
 
 <div class="d-flex flex-wrap">
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@mockData.Count(item => item.Priority == "Low")</h3>
+        <h3>
+            @mockData.Count(item => item.Priority == "Low" && item.CompletionDate != null)
+            <span class="fs-6 fw-light text-muted">of @mockData.Count(item => item.Priority == "Low")</span>
+        </h3>
         <p>Low priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@mockData.Count(item => item.Priority == "Medium")</h3>
+        <h3>
+            @mockData.Count(item => item.Priority == "Medium" && item.CompletionDate != null)
+            <span class="fs-6">of @mockData.Count(item => item.Priority == "Medium")</span>
+        </h3>
         <p>Medium priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@mockData.Count(item => item.Priority == "High")</h3>
+        <h3>@mockData.Count(item => item.Priority == "High" && item.CompletionDate != null) 
+            <span class="fs-6">of @mockData.Count(item => item.Priority == "High")</span>
+        </h3>
         <p>High priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@mockData.Count(item => item.Priority == "Low" || item.Priority == "Medium" || item.Priority == "High")</h3>
-        <h5>Total</h5>
+        <h3>
+            @mockData.Count(item => 
+                (item.Priority == "Low" && item.CompletionDate != null) ||
+                (item.Priority == "Medium" && item.CompletionDate != null) ||
+                (item.Priority == "High") && item.CompletionDate != null)
+            <span class="fs-6">of @mockData.Count()</span>
+        </h3>
+        <h5>Total complete</h5>
     </div>
 </div>
 

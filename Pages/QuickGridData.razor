@@ -2,15 +2,13 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using blazor_server_dashboard.Data.Models;
 
-<h2>Quick Grid Tracker</h2>
-
 <QuickGrid Items="@mockData">
     <PropertyColumn Property="@(i => i.Id)" Sortable="true" />
     <PropertyColumn Property="@(i => i.Description)" Sortable="true"/>
     <PropertyColumn Property="@(i => i.AssignedBy)" Sortable="true" />
     <PropertyColumn Property="@(i => i.AssignedTo)" Sortable="true" />
     <PropertyColumn Property="@(i => i.Priority)" Sortable="true" />
-    <PropertyColumn Property="@(i => i.StartDate)" Format="yyyy-MM-dd" Sortable="true" />
+    @* <PropertyColumn Property="@(i => i.StartDate)" Format="yyyy-MM-dd" Sortable="true" /> *@
     <PropertyColumn Property="@(i => i.CompletionDate)" Format="yyyy-MM-dd" Sortable="true" />
     <PropertyColumn Property="@(i => i.DueDate)" Format="yyyy-MM-dd" Sortable="true" />
 </QuickGrid>
