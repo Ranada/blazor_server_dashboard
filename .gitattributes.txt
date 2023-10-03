@@ -1,3 +1,0 @@
-*.css linguist-detectable=false
-*.cs linguist-vendored=false
-*.cs linguist-detectable=true
