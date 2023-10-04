@@ -7,7 +7,7 @@ Hello! I'm currently working on an exciting Blazor Server dashboard project. It'
 I transitioned from a React/Typescript tech stack to teaching myself C# and ASP.NET Core. To prepare for the Microsoft Software Systems Academy (MSSA) program's Cloud Application Development (CAD) path for Military Veterans, I completed the required LinkedIn Learning courses for C# and programming fundamentals. I'm constantly expanding my skills by utilizing the Microsoft Learn website resources.  
 
 <br />
-<img src="./Public/Images/2023-10-02-blazor-server-dashboard.png" >
+<img src="./Public/Images/2023-10-04-blazor-server-dashboard.png" >
 
 So far, I have accomplished:
 1. Using the latest .NET 8 preview runtime
