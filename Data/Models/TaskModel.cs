@@ -1,6 +1,6 @@
 ﻿namespace blazor_server_dashboard.Data.Models
 {
-    public record MockData(
+    public record TaskModel(
         int Id, 
         string? Description, 
         string? AssignedBy, 

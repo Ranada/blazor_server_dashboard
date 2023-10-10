@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using blazor_server_dashboard.Data.Models;
 
-<QuickGrid Items="@mockData">
+<QuickGrid Items="@tasks">
     <PropertyColumn Property="@(i => i.Id)" Sortable="true" />
     <PropertyColumn Property="@(i => i.Description)" Sortable="true"/>
     <PropertyColumn Property="@(i => i.AssignedBy)" Sortable="true" />
@@ -15,5 +15,5 @@
 
 @code {
     [CascadingParameter]
-    public IQueryable<MockData>? mockData { get; set; }
+    public IQueryable<TaskModel>? tasks { get; set; }
 }

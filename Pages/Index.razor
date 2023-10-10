@@ -3,7 +3,7 @@
 
 <PageTitle>Index</PageTitle>
 
-<CascadingValue Value="@mockData">
+<CascadingValue Value="@tasks">
     <div class="container">
         <h1>4th Quarter Goals</h1>
         <section>
@@ -17,14 +17,14 @@
 </CascadingValue>
 
 @code {
-    public IQueryable<MockData> mockData = new[]
+    public IQueryable<TaskModel> tasks = new[]
     {
-        new MockData(1, "Sign security agreements", "Neil Ranada", "Katelyn Pham", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16)),
-        new MockData(2, "Review code", "Neil Ranada", "Neil Ranada", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16)),
-        new MockData(3, "Complete cybersecurity training", "Keisha Weiland", "Katelyn Pham", "Medium", DateTime.Now, new DateOnly(2023, 10, 01), new DateOnly(2023, 11, 16)),
-        new MockData(4, "Audit security program", "Neil Ranada", "Billy Dietz", "Medium", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 11, 20)),
-        new MockData(5, "Fix security vulnerability", "Keisha Weiland", "Diane Basham", "High", DateTime.Now, new DateOnly(2023, 10, 03), new DateOnly(2023, 11, 20)),
-        new MockData(6, "Review and approve security plan", "Neil Ranada", "Tammy Wescott", "Medium", DateTime.Now, null, new DateOnly(2023, 12, 05)),
-        new MockData(7, "Find bugs", "Grace Hopper", "Neil Ranada", "Low", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 12, 15))
+        new TaskModel(1, "Sign security agreements", "Neil Ranada", "Katelyn Pham", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16)),
+        new TaskModel(2, "Review code", "Neil Ranada", "Neil Ranada", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16)),
+        new TaskModel(3, "Complete cybersecurity training", "Keisha Weiland", "Katelyn Pham", "Medium", DateTime.Now, new DateOnly(2023, 10, 01), new DateOnly(2023, 11, 16)),
+        new TaskModel(4, "Audit security program", "Neil Ranada", "Billy Dietz", "Medium", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 11, 20)),
+        new TaskModel(5, "Fix security vulnerability", "Keisha Weiland", "Diane Basham", "High", DateTime.Now, new DateOnly(2023, 10, 03), new DateOnly(2023, 11, 20)),
+        new TaskModel(6, "Review and approve security plan", "Neil Ranada", "Tammy Wescott", "Medium", DateTime.Now, null, new DateOnly(2023, 12, 05)),
+        new TaskModel(7, "Find bugs", "Grace Hopper", "Neil Ranada", "Low", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 12, 15))
     }.AsQueryable();
 }
