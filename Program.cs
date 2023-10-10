@@ -1,5 +1,6 @@
 using blazor_server_dashboard.Areas.Identity;
 using blazor_server_dashboard.Data;
+using blazor_server_dashboard.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
@@ -15,11 +16,13 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
+builder.Services.AddScoped<TaskService>();
 
 var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new NullReferenceException("No connection string in configuration file.");
 builder.Services.AddDbContextFactory<ApplicationDbContext>(options => options.UseSqlServer(connectionstring));
 builder.Services.AddHttpClient();
+
 
 var app = builder.Build();
 
