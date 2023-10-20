@@ -1,25 +1,25 @@
-﻿@using blazor_server_dashboard.Data.Models;
+﻿@using blazor_server_dashboard.Data.Models
 
 <div class="d-flex flex-wrap">
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@tasks?.Count(item => item.Priority == "Low")</h3>
+        <h3>@(tasks?.Count(item => item.Priority == "Low"))</h3>
         <p>Low priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@tasks?.Count(item => item.Priority == "Medium")</h3>
+        <h3>@(tasks?.Count(item => item.Priority == "Medium"))</h3>
         <p>Medium priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@tasks?.Count(item => item.Priority == "High")</h3>
+        <h3>@(tasks?.Count(item => item.Priority == "High"))</h3>
         <p>High priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@tasks?.Count()</h3>
+        <h3>@(tasks?.Count())</h3>
         <h5>Total complete</h5>
     </div>
 </div>
 
-@code {
+@code{
     [CascadingParameter]
     public IQueryable<TaskModel>? tasks { get; set; }
 }
