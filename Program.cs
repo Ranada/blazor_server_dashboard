@@ -7,8 +7,25 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+try
+{
+    Log.Logger = new LoggerConfiguration()
+        .WriteTo.Console()
+        .CreateLogger();
+    Log.Information("Starting up with Serilog!");
+}
+catch (Exception ex)
+{
+    Log.Fatal("Unable to start up the app!");
+    Log.Fatal(ex.Message);
+    throw;
+}
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
