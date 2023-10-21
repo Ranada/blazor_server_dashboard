@@ -15,26 +15,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 try
 {
-    //var configuration = new ConfigurationBuilder()
-    //    .AddJsonFile("appsettings.json")
-    //    .Build();
-
-    //Console.WriteLine("CONFIGURATION: {0}", configuration.ToString());
-
-    //Log.Logger = new LoggerConfiguration()
-    //    .ReadFrom.Configuration(configuration)
-    //    .CreateLogger();
-
     Log.Logger = new LoggerConfiguration()
         .WriteTo.Console()
         .CreateLogger();
-
     Log.Information("Starting up with Serilog!");
 }
 catch (Exception ex)
 {
-    Console.WriteLine("SOMETHING WEIRD HAPPENED WITH THE LOGGING CONFIG...");
-    Console.WriteLine(ex.ToString());
+    Log.Fatal("Unable to start up the app!");
+    Log.Fatal(ex.Message);
+    throw;
 }
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -44,21 +34,6 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddScoped<TaskService>();
-
-
-//try
-//{
-//    Log.Information("Application start up!");
-//}
-//catch (Exception ex)
-//{
-//    Log.Fatal(ex, "The application failed to start correctly.");
-//}
-//finally
-//{
-//    //Cleans up logs still pending by writing them before closing
-//    Log.CloseAndFlush();
-//}
 
 var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new NullReferenceException("No connection string in configuration file.");
@@ -83,8 +58,6 @@ else
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-
-//app.UseSerilogRequestLogging();
 
 app.UseRouting();
 
