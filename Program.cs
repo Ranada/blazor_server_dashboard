@@ -23,9 +23,16 @@ Log.Logger = new LoggerConfiguration()
 
 try
 {
-    Log.Information("Starting up application");
+    Log.Information("Starting up web host");
 
     var builder = WebApplication.CreateBuilder(args);
+
+    // Exchange ASP.NET Core default logging for Serilog
+    // Full setup of Serilog using the configuration in appsettings.json
+    builder.Host.UseSerilog((context, services, configuration) => configuration
+        .ReadFrom.Configuration(context.Configuration)
+        .ReadFrom.Services(services)
+        .Enrich.FromLogContext());
 
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -41,6 +48,11 @@ try
     builder.Services.AddHttpClient();
 
     var app = builder.Build();
+
+    app.UseSerilogRequestLogging(configure =>
+    {
+        configure.MessageTemplate = "HTTP {RequestMethod} {RequestPath} ({UserId}) responded {StatusCode} in {Elapsed:0.0000}ms";
+    });
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
