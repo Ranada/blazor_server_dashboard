@@ -616,3 +616,362 @@ FROM [Tasks] AS [t]
 2023-10-23 23:56:39.477 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
 2023-10-23 23:56:39.477 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
 2023-10-23 23:56:39.488 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 10.6452ms
+2023-10-23 23:56:39.488 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-23 23:56:39.491 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 2032.2258ms
+2023-10-23 23:56:39.491 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-23 23:56:39.514 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-23 23:56:39.517 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-23 23:56:39.519 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 30.0317ms
+2023-10-23 23:56:39.522 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 45.159ms
+2023-10-23 23:56:39.531 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.4502ms
+2023-10-23 23:56:39.593 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-23 23:56:39.610 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-23 23:56:39.616 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-23 23:56:39.618 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 10.3358ms
+2023-10-23 23:56:39.627 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 33.6298ms
+2023-10-23 23:56:39.681 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-23 23:56:39.687 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-23 23:56:39.693 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-23 23:56:39.694 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 8.3778ms
+2023-10-23 23:56:39.697 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.4782ms
+2023-10-23 23:56:39.702 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=Tb5Extekfv-ZuJXh8is_IA - null null
+2023-10-23 23:56:39.706 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-23 23:56:39.844 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-23 23:56:39.844 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-23 23:56:39.852 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:03:45.896 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 00:03:46.206 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-24 00:03:46.209 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-24 00:03:46.213 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 00:03:46.215 -07:00 [INF] Hosting environment: Development
+2023-10-24 00:03:46.216 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-24 00:03:46.870 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:03:46.938 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:03:46.951 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:03:46.966 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:03:46.968 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:03:48.116 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:03:48.387 -07:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:03:48.533 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:03:48.623 -07:00 [INF] Executed page /_Host in 1667.1621ms
+2023-10-24 00:03:48.626 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:03:48.630 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 1717.0703ms
+2023-10-24 00:03:48.643 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:03:48.643 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:03:48.654 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:03:48.656 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 13.2908ms
+2023-10-24 00:03:48.662 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 1793.846ms
+2023-10-24 00:03:48.663 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:03:48.684 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:03:48.686 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:03:48.688 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 31.2692ms
+2023-10-24 00:03:48.693 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 50.8576ms
+2023-10-24 00:03:48.699 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.3195ms
+2023-10-24 00:03:48.748 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:03:48.762 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:03:48.773 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:03:48.775 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 14.7108ms
+2023-10-24 00:03:48.785 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 36.931ms
+2023-10-24 00:03:48.818 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:03:48.822 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:03:48.833 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:03:48.835 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 13.4209ms
+2023-10-24 00:03:48.837 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 18.8571ms
+2023-10-24 00:03:48.840 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=jZ0WK1tHw8vRbMROq_qrzg - null null
+2023-10-24 00:03:48.844 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:03:48.959 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:03:48.962 -07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:03:48.970 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:04:42.883 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryxD5gnJGYBOUhqIUC 359
+2023-10-24 00:04:42.893 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:04:42.916 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:04:42.924 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 33.4570ms
+2023-10-24 00:04:42.927 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 44.2511ms
+2023-10-24 00:20:25.222 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 00:20:25.667 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-24 00:20:25.670 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-24 00:20:25.677 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 00:20:25.679 -07:00 [INF] Hosting environment: Development
+2023-10-24 00:20:25.681 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-24 00:20:26.295 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:20:26.397 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:20:26.417 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:20:26.440 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:20:26.444 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:20:28.759 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:20:29.055 -07:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:20:29.187 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:20:29.190 -07:00 [INF] GETTING ALL TASKS ASYNC completed in 2425.7 ms
+2023-10-24 00:20:29.334 -07:00 [INF] Executed page /_Host in 2909.8422ms
+2023-10-24 00:20:29.340 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:20:29.346 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryPSd5ARlX85moSxIH 359
+2023-10-24 00:20:29.347 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 2994.5889ms
+2023-10-24 00:20:29.357 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:20:29.375 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:20:29.377 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:20:29.391 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:20:29.419 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 64.9410ms
+2023-10-24 00:20:29.411 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:20:29.400 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 20.3973ms
+2023-10-24 00:20:29.424 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 3132.3248ms
+2023-10-24 00:20:29.428 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:20:29.450 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 104.5805ms
+2023-10-24 00:20:29.497 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:20:29.505 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:20:29.507 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 83.7377ms
+2023-10-24 00:20:29.512 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 136.9902ms
+2023-10-24 00:20:29.529 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:20:29.533 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.586ms
+2023-10-24 00:20:29.552 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:20:29.576 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:20:29.589 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 41.5294ms
+2023-10-24 00:20:29.609 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 79.1359ms
+2023-10-24 00:20:29.615 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:20:29.631 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:20:29.647 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:20:29.650 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 18.9172ms
+2023-10-24 00:20:29.654 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 38.6679ms
+2023-10-24 00:20:29.841 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=K6fwZ5wj2YidHBkOSUCP-w - null null
+2023-10-24 00:20:29.852 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:20:30.166 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:20:30.167 -07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:20:30.180 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:20:30.182 -07:00 [INF] GETTING ALL TASKS ASYNC completed in 58.4 ms
+2023-10-24 00:22:19.246 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 00:22:20.232 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-24 00:22:20.238 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-24 00:22:20.244 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 00:22:20.246 -07:00 [INF] Hosting environment: Development
+2023-10-24 00:22:20.250 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-24 00:22:20.421 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:22:20.421 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarySxBXgapBj8WakSTT 359
+2023-10-24 00:22:20.513 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:22:20.513 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:22:20.538 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:22:20.546 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:22:20.552 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 77.0460ms
+2023-10-24 00:22:20.563 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:22:20.566 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 149.4419ms
+2023-10-24 00:22:20.567 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:22:22.277 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:22.523 -07:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:22.606 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:22.608 -07:00 [INF] GetAllTasksAsync completed in 1730.6 ms
+2023-10-24 00:22:22.703 -07:00 [INF] Executed page /_Host in 2157.9649ms
+2023-10-24 00:22:22.706 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:22:22.709 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 2236.7325ms
+2023-10-24 00:22:22.719 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:22:22.719 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:22:22.728 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 2307.3837ms
+2023-10-24 00:22:22.731 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:22:22.735 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 15.9128ms
+2023-10-24 00:22:22.738 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:22:22.748 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:22:22.759 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:22:22.761 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 33.0498ms
+2023-10-24 00:22:22.767 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 46.9853ms
+2023-10-24 00:22:22.805 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.4605ms
+2023-10-24 00:22:22.862 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:22:22.869 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:22:22.879 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:22:22.881 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 14.4214ms
+2023-10-24 00:22:22.885 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 22.6269ms
+2023-10-24 00:22:22.969 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:22:22.979 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:22:22.993 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:22:22.995 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 16.7468ms
+2023-10-24 00:22:22.999 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 29.944ms
+2023-10-24 00:22:23.004 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=3zPpiA2GIoSvzwZwo8IUMw - null null
+2023-10-24 00:22:23.010 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:22:23.177 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:23.178 -07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:23.186 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:23.188 -07:00 [INF] GetAllTasksAsync completed in 39.6 ms
+2023-10-24 00:22:38.469 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:22:38.480 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:22:38.484 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:22:38.488 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:22:38.491 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:22:38.562 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:38.563 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:38.567 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:38.568 -07:00 [INF] GetAllTasksAsync completed in 64.9 ms
+2023-10-24 00:22:38.574 -07:00 [INF] Executed page /_Host in 88.7778ms
+2023-10-24 00:22:38.576 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:22:38.577 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 97.4438ms
+2023-10-24 00:22:38.580 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 111.149ms
+2023-10-24 00:22:38.591 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryIqzB3qc00svm5y05 359
+2023-10-24 00:22:38.595 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:22:38.595 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:22:38.595 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:22:38.596 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:22:38.604 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:22:38.605 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-24 00:22:38.608 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 12.9257ms
+2023-10-24 00:22:38.610 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:22:38.611 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 15600.4875ms
+2023-10-24 00:22:38.613 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.1428ms
+2023-10-24 00:22:38.613 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:22:38.634 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 38.4498ms
+2023-10-24 00:22:38.642 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 50.9763ms
+2023-10-24 00:22:38.618 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:22:38.622 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=3zPpiA2GIoSvzwZwo8IUMw - 200 null null 15618.0487ms
+2023-10-24 00:22:38.651 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 47.3324ms
+2023-10-24 00:22:38.660 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 64.8547ms
+2023-10-24 00:22:38.667 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:22:38.675 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:22:38.677 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:22:38.680 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 5.7196ms
+2023-10-24 00:22:38.686 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 19.0437ms
+2023-10-24 00:22:38.707 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:22:38.711 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:22:38.713 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:22:38.714 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 3.6237ms
+2023-10-24 00:22:38.718 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.5363ms
+2023-10-24 00:22:38.723 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=8jyN1SJb7xEGLhGOPZgNbQ - null null
+2023-10-24 00:22:38.730 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:22:38.758 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:38.759 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:38.770 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:38.771 -07:00 [INF] GetAllTasksAsync completed in 15.8 ms
+2023-10-24 00:22:47.521 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:22:47.528 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:22:47.529 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:22:47.532 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:22:47.534 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:22:47.543 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:47.543 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:47.548 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:47.550 -07:00 [INF] GetAllTasksAsync completed in 8.9 ms
+2023-10-24 00:22:47.560 -07:00 [INF] Executed page /_Host in 28.7344ms
+2023-10-24 00:22:47.562 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:22:47.564 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 36.9119ms
+2023-10-24 00:22:47.568 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 46.6276ms
+2023-10-24 00:22:47.576 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryC2WzPYPSH57fjydN 359
+2023-10-24 00:22:47.578 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-24 00:22:47.582 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 8851.8044ms
+2023-10-24 00:22:47.580 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:22:47.580 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:22:47.581 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:22:47.580 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:22:47.584 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=8jyN1SJb7xEGLhGOPZgNbQ - 200 null null 8860.5815ms
+2023-10-24 00:22:47.591 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 10.9941ms
+2023-10-24 00:22:47.594 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:22:47.595 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8161ms
+2023-10-24 00:22:47.597 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:22:47.617 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 36.6113ms
+2023-10-24 00:22:47.635 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:22:47.637 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 60.6994ms
+2023-10-24 00:22:47.639 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:22:47.644 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 48.1009ms
+2023-10-24 00:22:47.647 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 67.3414ms
+2023-10-24 00:22:47.654 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:22:47.664 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:22:47.668 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:22:47.673 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 9.6651ms
+2023-10-24 00:22:47.678 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 23.8121ms
+2023-10-24 00:22:47.687 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:22:47.703 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:22:47.707 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:22:47.713 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 9.8135ms
+2023-10-24 00:22:47.725 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 37.9178ms
+2023-10-24 00:22:47.730 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=c-VEdZ67txkH8Jeg4YRe0A - null null
+2023-10-24 00:22:47.734 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:22:47.753 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:22:47.757 -07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:22:47.766 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:22:47.768 -07:00 [INF] GetAllTasksAsync completed in 16.6 ms
+2023-10-24 00:23:05.480 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-24 00:23:05.487 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-24 00:23:05.488 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-24 00:23:05.490 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-24 00:23:05.492 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-24 00:23:05.496 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:23:05.497 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:23:05.502 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:23:05.505 -07:00 [INF] GetAllTasksAsync completed in 9.6 ms
+2023-10-24 00:23:05.512 -07:00 [INF] Executed page /_Host in 22.465ms
+2023-10-24 00:23:05.514 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-24 00:23:05.515 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 28.7331ms
+2023-10-24 00:23:05.518 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 38.1795ms
+2023-10-24 00:23:05.532 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryAUdvvkMei1xDys1R 359
+2023-10-24 00:23:05.538 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-24 00:23:05.538 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-24 00:23:05.539 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-24 00:23:05.540 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:23:05.542 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 4.2049ms
+2023-10-24 00:23:05.545 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-24 00:23:05.546 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 17811.2848ms
+2023-10-24 00:23:05.546 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-24 00:23:05.547 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:23:05.558 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 18.5554ms
+2023-10-24 00:23:05.554 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=c-VEdZ67txkH8Jeg4YRe0A - 200 null null 17824.019ms
+2023-10-24 00:23:05.551 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-24 00:23:05.562 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 29.6107ms
+2023-10-24 00:23:05.564 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.8375ms
+2023-10-24 00:23:05.584 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-24 00:23:05.594 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 49.3714ms
+2023-10-24 00:23:05.597 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 58.9695ms
+2023-10-24 00:23:05.603 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-24 00:23:05.606 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-24 00:23:05.608 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-24 00:23:05.611 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 4.2984ms
+2023-10-24 00:23:05.615 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 12.1159ms
+2023-10-24 00:23:05.635 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-24 00:23:05.639 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-24 00:23:05.640 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-24 00:23:05.643 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 4.0792ms
+2023-10-24 00:23:05.646 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 11.1157ms
+2023-10-24 00:23:05.657 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=1oTCz7_jij0HrDNPD7HdIA - null null
+2023-10-24 00:23:05.661 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-24 00:23:05.673 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-24 00:23:05.673 -07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-24 00:23:05.681 -07:00 [INF] Retrieved tasks from the database.
+2023-10-24 00:23:05.682 -07:00 [INF] GetAllTasksAsync completed in 10.5 ms
+2023-10-24 00:26:00.097 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryBOZKRZz9oG7qJnNK 359
+2023-10-24 00:26:00.102 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-24 00:26:00.105 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-24 00:26:00.109 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 7.6006ms
+2023-10-24 00:26:00.114 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 17.0418ms
+2023-10-24 00:26:00.121 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-24 00:26:00.122 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 174460.4213ms
+2023-10-24 00:26:00.124 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=1oTCz7_jij0HrDNPD7HdIA - 200 null null 174466.7173ms

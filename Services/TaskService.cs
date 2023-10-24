@@ -2,6 +2,7 @@
 using blazor_server_dashboard.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using SerilogTimings;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -23,9 +24,12 @@ namespace blazor_server_dashboard.Services
         {
             try
             {
-                var taskList = await _appDbContext.Tasks.ToListAsync();
-                _logger.LogInformation("Retrieved tasks from the database.");
-                return taskList;
+                using (Operation.Time(nameof(GetAllTasksAsync)))
+                { 
+                    var taskList = await _appDbContext.Tasks.ToListAsync();
+                    _logger.LogInformation("Retrieved tasks from the database.");
+                    return taskList;
+                }
             }
             catch (Exception ex)
             {
