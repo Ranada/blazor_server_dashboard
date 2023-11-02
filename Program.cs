@@ -1,13 +1,9 @@
 using blazor_server_dashboard.Areas.Identity;
 using blazor_server_dashboard.Data;
 using blazor_server_dashboard.Services;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Serilog;
 using Serilog.Events;
 

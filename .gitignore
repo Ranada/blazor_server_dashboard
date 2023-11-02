@@ -41,3 +41,5 @@ obj
 .vs2019/Toolbox/
 .vs2022/Cache/
 .vs2022/Toolbox/
+
+./Logs

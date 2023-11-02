@@ -975,3 +975,401 @@ FROM [Tasks] AS [t]
 2023-10-24 00:26:00.121 -07:00 [INF] Executed endpoint '/_blazor'
 2023-10-24 00:26:00.122 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 174460.4213ms
 2023-10-24 00:26:00.124 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=1oTCz7_jij0HrDNPD7HdIA - 200 null null 174466.7173ms
+2023-10-29 07:18:23.012 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:18:24.874 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:18:24.883 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:18:24.895 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:18:24.903 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:18:24.908 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 07:18:26.889 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-29 07:18:27.969 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-29 07:18:28.293 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-29 07:18:28.418 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-29 07:18:28.443 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-29 07:18:39.858 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-29 07:18:42.583 -07:00 [INF] Executed DbCommand (252ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-29 07:18:42.944 -07:00 [INF] Retrieved tasks from the database.
+2023-10-29 07:18:42.954 -07:00 [INF] GetAllTasksAsync completed in 10580.6 ms
+2023-10-29 07:18:43.480 -07:00 [INF] Executed page /_Host in 15163.5344ms
+2023-10-29 07:18:43.495 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-29 07:18:43.509 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/bootstrap/bootstrap.min.css - null null
+2023-10-29 07:18:43.515 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/site.css - null null
+2023-10-29 07:18:43.516 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/blazor_server_dashboard.styles.css - null null
+2023-10-29 07:18:43.517 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-29 07:18:43.520 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-29 07:18:43.529 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-29 07:18:43.549 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 15815.5219ms
+2023-10-29 07:18:43.622 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-29 07:18:43.672 -07:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\site.css'
+2023-10-29 07:18:43.672 -07:00 [INF] Sending file. Request path: '/blazor_server_dashboard.styles.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net8.0\scopedcss\bundle\blazor_server_dashboard.styles.css'
+2023-10-29 07:18:43.688 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 167.8882ms
+2023-10-29 07:18:43.691 -07:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\bootstrap\bootstrap.min.css'
+2023-10-29 07:18:43.749 -07:00 [INF] HTTP GET /css/site.css ({UserId}) responded 200 in 165.3521ms
+2023-10-29 07:18:43.773 -07:00 [INF] HTTP GET /blazor_server_dashboard.styles.css ({UserId}) responded 200 in 189.0949ms
+2023-10-29 07:18:43.849 -07:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2023-10-29 07:18:43.862 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 16985.6578ms
+2023-10-29 07:18:43.921 -07:00 [INF] HTTP GET /css/bootstrap/bootstrap.min.css ({UserId}) responded 200 in 358.7670ms
+2023-10-29 07:18:43.955 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/site.css - 200 3235 text/css 441.0953ms
+2023-10-29 07:18:43.971 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/open-iconic/font/css/open-iconic-bootstrap.min.css - null null
+2023-10-29 07:18:43.973 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/blazor_server_dashboard.styles.css - 200 3159 text/css 456.2164ms
+2023-10-29 07:18:43.987 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - null null
+2023-10-29 07:18:44.018 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-29 07:18:44.101 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/bootstrap/bootstrap.min.css - 200 162747 text/css 591.3689ms
+2023-10-29 07:18:44.279 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 749.8388ms
+2023-10-29 07:18:44.289 -07:00 [INF] Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css'
+2023-10-29 07:18:44.304 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 200 in 690.7913ms
+2023-10-29 07:18:44.330 -07:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'
+2023-10-29 07:18:44.400 -07:00 [INF] HTTP GET /css/open-iconic/font/css/open-iconic-bootstrap.min.css ({UserId}) responded 200 in 210.3897ms
+2023-10-29 07:18:44.426 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 200 147999 text/javascript 908.9849ms
+2023-10-29 07:18:44.444 -07:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css ({UserId}) responded 200 in 197.7199ms
+2023-10-29 07:18:44.465 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/open-iconic/font/css/open-iconic-bootstrap.min.css - 200 9395 text/css 494.4664ms
+2023-10-29 07:18:44.518 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - 200 8251 text/css 530.9199ms
+2023-10-29 07:18:44.572 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-29 07:18:44.608 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-29 07:18:44.676 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-29 07:18:44.690 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 90.4058ms
+2023-10-29 07:18:44.709 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 137.1031ms
+2023-10-29 07:18:44.910 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/open-iconic/font/fonts/open-iconic.woff - null null
+2023-10-29 07:18:45.045 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-29 07:18:45.082 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-29 07:18:45.103 -07:00 [INF] Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\fonts\open-iconic.woff'
+2023-10-29 07:18:45.115 -07:00 [INF] HTTP GET /css/open-iconic/font/fonts/open-iconic.woff ({UserId}) responded 200 in 57.5676ms
+2023-10-29 07:18:45.165 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-29 07:18:45.170 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/open-iconic/font/fonts/open-iconic.woff - 200 14984 application/font-woff 257.0151ms
+2023-10-29 07:18:45.178 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 102.1016ms
+2023-10-29 07:18:45.287 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 241.5577ms
+2023-10-29 07:18:45.545 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=5y2OXR7li3hBspWEp45N9A - null null
+2023-10-29 07:18:45.676 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-29 07:18:46.105 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-29 07:18:46.110 -07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-29 07:18:46.148 -07:00 [INF] Retrieved tasks from the database.
+2023-10-29 07:18:46.151 -07:00 [INF] GetAllTasksAsync completed in 101.9 ms
+2023-10-29 07:18:46.343 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - null null
+2023-10-29 07:18:46.513 -07:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\QuickGrid.razor.js'
+2023-10-29 07:18:46.521 -07:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js ({UserId}) responded 200 in 132.1394ms
+2023-10-29 07:18:46.547 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - 200 2563 text/javascript 202.7567ms
+2023-10-29 07:18:49.738 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarypiFgXbx1ouy6I9XS 359
+2023-10-29 07:18:49.825 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-29 07:18:49.906 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-29 07:18:49.919 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 95.5229ms
+2023-10-29 07:18:49.939 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 200.7246ms
+2023-10-29 07:18:49.977 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-29 07:18:49.988 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 4312.8499ms
+2023-10-29 07:18:50.005 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=5y2OXR7li3hBspWEp45N9A - 200 null null 4460.253ms
+2023-10-29 07:24:02.344 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:24:04.057 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:24:04.060 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:24:04.074 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:24:04.080 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:24:04.089 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 07:24:34.176 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:24:35.308 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:24:35.312 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:24:35.320 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:24:35.323 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:24:35.326 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 07:24:58.205 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:24:59.238 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:24:59.244 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:24:59.251 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:24:59.254 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:24:59.259 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 07:36:34.136 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:36:35.710 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:36:35.720 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:36:35.729 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:36:35.735 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:36:35.743 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 07:38:18.727 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 07:38:19.928 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 07:38:19.938 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 07:38:19.954 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 07:38:19.958 -07:00 [INF] Hosting environment: Development
+2023-10-29 07:38:19.967 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 09:38:17.820 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 09:38:19.114 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 09:38:19.116 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 09:38:19.119 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 09:38:19.121 -07:00 [INF] Hosting environment: Development
+2023-10-29 09:38:19.123 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 09:47:26.136 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 09:47:26.417 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 09:47:26.419 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 09:47:26.421 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 09:47:26.422 -07:00 [INF] Hosting environment: Development
+2023-10-29 09:47:26.423 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 09:49:22.635 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 09:49:23.122 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 09:49:23.127 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 09:49:23.131 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 09:49:23.133 -07:00 [INF] Hosting environment: Development
+2023-10-29 09:49:23.135 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:38:36.470 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:38:36.721 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:38:36.723 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:38:36.725 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:38:36.726 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:38:36.727 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:38:37.157 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-10-29 10:38:37.296 -07:00 [INF] Executing endpoint '/_Host'
+2023-10-29 10:38:37.363 -07:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-10-29 10:38:37.374 -07:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-10-29 10:38:37.378 -07:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-10-29 10:38:39.295 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-29 10:38:40.200 -07:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-29 10:38:40.346 -07:00 [INF] Retrieved tasks from the database.
+2023-10-29 10:38:40.351 -07:00 [INF] GetAllTasksAsync completed in 2448.4 ms
+2023-10-29 10:38:40.626 -07:00 [INF] Executed page /_Host in 3256.1245ms
+2023-10-29 10:38:40.631 -07:00 [INF] Executed endpoint '/_Host'
+2023-10-29 10:38:40.641 -07:00 [INF] HTTP GET / ({UserId}) responded 200 in 3382.0003ms
+2023-10-29 10:38:40.680 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-10-29 10:38:40.680 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-10-29 10:38:40.681 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 3524.8512ms
+2023-10-29 10:38:40.681 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-10-29 10:38:40.697 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 17.3068ms
+2023-10-29 10:38:40.727 -07:00 [INF] Executing endpoint 'Blazor static files'
+2023-10-29 10:38:40.742 -07:00 [INF] The file /_framework/blazor.server.js was not modified
+2023-10-29 10:38:40.751 -07:00 [INF] Executed endpoint 'Blazor static files'
+2023-10-29 10:38:40.755 -07:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 304 in 32.9553ms
+2023-10-29 10:38:40.765 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 304 null text/javascript 84.2766ms
+2023-10-29 10:38:40.837 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.7793ms
+2023-10-29 10:38:40.913 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-10-29 10:38:40.950 -07:00 [INF] Executing endpoint 'Blazor initializers'
+2023-10-29 10:38:40.967 -07:00 [INF] Executed endpoint 'Blazor initializers'
+2023-10-29 10:38:40.972 -07:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 24.5688ms
+2023-10-29 10:38:40.979 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 66.4928ms
+2023-10-29 10:38:41.073 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-10-29 10:38:41.083 -07:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-10-29 10:38:41.104 -07:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-10-29 10:38:41.107 -07:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 25.9984ms
+2023-10-29 10:38:41.113 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 39.5166ms
+2023-10-29 10:38:41.129 -07:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=TrV60LRwybfufQkMJoJFaQ - null null
+2023-10-29 10:38:41.138 -07:00 [INF] Executing endpoint '/_blazor'
+2023-10-29 10:38:41.403 -07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-29 10:38:41.405 -07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-10-29 10:38:41.421 -07:00 [INF] Retrieved tasks from the database.
+2023-10-29 10:38:41.424 -07:00 [INF] GetAllTasksAsync completed in 58.5 ms
+2023-10-29 10:38:45.861 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryb4HHwGfeAxf7jXOb 359
+2023-10-29 10:38:45.866 -07:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-10-29 10:38:45.888 -07:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-10-29 10:38:45.890 -07:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 24.4126ms
+2023-10-29 10:38:45.894 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 33.2256ms
+2023-10-29 10:38:45.941 -07:00 [INF] Executed endpoint '/_blazor'
+2023-10-29 10:38:45.944 -07:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 4805.6967ms
+2023-10-29 10:38:45.948 -07:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=TrV60LRwybfufQkMJoJFaQ - 200 null null 4818.6863ms
+2023-10-29 10:39:05.703 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:39:06.051 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:39:06.055 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:39:06.057 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:39:06.059 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:39:06.060 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:39:42.878 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:39:43.222 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:39:43.223 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:39:43.225 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:39:43.226 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:39:43.227 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:40:15.857 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:40:16.127 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:40:16.129 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:40:16.133 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:40:16.134 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:40:16.135 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:40:24.742 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:40:25.023 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:40:25.025 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:40:25.027 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:40:25.028 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:40:25.029 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:46:52.702 -07:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-29 10:46:52.986 -07:00 [INF] Now listening on: https://localhost:7233
+2023-10-29 10:46:52.987 -07:00 [INF] Now listening on: http://localhost:5058
+2023-10-29 10:46:52.989 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-29 10:46:52.990 -07:00 [INF] Hosting environment: Development
+2023-10-29 10:46:52.991 -07:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-10-29 10:49:49.446 -07:00 [INF] Application is shutting down...
+2023-11-01 17:50:50.098 -04:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-01 17:50:50.669 -04:00 [INF] Now listening on: https://localhost:7233
+2023-11-01 17:50:50.671 -04:00 [INF] Now listening on: http://localhost:5058
+2023-11-01 17:50:50.673 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-01 17:50:50.674 -04:00 [INF] Hosting environment: Development
+2023-11-01 17:50:50.675 -04:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-11-01 17:50:51.103 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/ - null null
+2023-11-01 17:50:51.230 -04:00 [INF] Executing endpoint '/_Host'
+2023-11-01 17:50:51.282 -04:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-11-01 17:50:51.297 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-11-01 17:50:51.299 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-11-01 17:50:52.697 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-01 17:50:53.093 -04:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-11-01 17:50:53.160 -04:00 [INF] Retrieved tasks from the database.
+2023-11-01 17:50:53.163 -04:00 [INF] GetAllTasksAsync completed in 1498.4 ms
+2023-11-01 17:50:53.275 -04:00 [INF] Executed page /_Host in 1987.3847ms
+2023-11-01 17:50:53.278 -04:00 [INF] Executed endpoint '/_Host'
+2023-11-01 17:50:53.282 -04:00 [INF] HTTP GET / ({UserId}) responded 200 in 2106.1333ms
+2023-11-01 17:50:53.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/site.css - null null
+2023-11-01 17:50:53.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/blazor_server_dashboard.styles.css - null null
+2023-11-01 17:50:53.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - null null
+2023-11-01 17:50:53.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/bootstrap/bootstrap.min.css - null null
+2023-11-01 17:50:53.288 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - null null
+2023-11-01 17:50:53.293 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_vs/browserLink - null null
+2023-11-01 17:50:53.300 -04:00 [INF] Executing endpoint 'Blazor static files'
+2023-11-01 17:50:53.300 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/ - 200 null text/html; charset=utf-8 2199.1977ms
+2023-11-01 17:50:53.302 -04:00 [INF] Sending file. Request path: '/blazor_server_dashboard.styles.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net8.0\scopedcss\bundle\blazor_server_dashboard.styles.css'
+2023-11-01 17:50:53.310 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/aspnetcore-browser-refresh.js - 200 13361 application/javascript; charset=utf-8 21.4417ms
+2023-11-01 17:50:53.314 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\site.css'
+2023-11-01 17:50:53.319 -04:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2023-11-01 17:50:53.322 -04:00 [INF] HTTP GET /blazor_server_dashboard.styles.css ({UserId}) responded 200 in 25.7757ms
+2023-11-01 17:50:53.325 -04:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\bootstrap\bootstrap.min.css'
+2023-11-01 17:50:53.328 -04:00 [INF] HTTP GET /css/site.css ({UserId}) responded 200 in 36.0338ms
+2023-11-01 17:50:53.330 -04:00 [INF] Executed endpoint 'Blazor static files'
+2023-11-01 17:50:53.332 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/blazor_server_dashboard.styles.css - 200 3159 text/css 43.75ms
+2023-11-01 17:50:53.333 -04:00 [INF] HTTP GET /css/bootstrap/bootstrap.min.css ({UserId}) responded 200 in 31.5403ms
+2023-11-01 17:50:53.334 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - null null
+2023-11-01 17:50:53.336 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/site.css - 200 3235 text/css 47.8933ms
+2023-11-01 17:50:53.337 -04:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 200 in 38.8631ms
+2023-11-01 17:50:53.339 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/open-iconic/font/css/open-iconic-bootstrap.min.css - null null
+2023-11-01 17:50:53.343 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/bootstrap/bootstrap.min.css - 200 162747 text/css 55.2524ms
+2023-11-01 17:50:53.355 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_framework/blazor.server.js - 200 147999 text/javascript 67.7331ms
+2023-11-01 17:50:53.359 -04:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'
+2023-11-01 17:50:53.371 -04:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css ({UserId}) responded 200 in 24.9845ms
+2023-11-01 17:50:53.372 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.2019ms
+2023-11-01 17:50:53.376 -04:00 [INF] Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css'
+2023-11-01 17:50:53.376 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - 200 8251 text/css 41.6688ms
+2023-11-01 17:50:53.380 -04:00 [INF] HTTP GET /css/open-iconic/font/css/open-iconic-bootstrap.min.css ({UserId}) responded 200 in 21.4170ms
+2023-11-01 17:50:53.386 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/open-iconic/font/css/open-iconic-bootstrap.min.css - 200 9395 text/css 46.8971ms
+2023-11-01 17:50:53.394 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_blazor/initializers - null null
+2023-11-01 17:50:53.400 -04:00 [INF] Executing endpoint 'Blazor initializers'
+2023-11-01 17:50:53.403 -04:00 [INF] Executed endpoint 'Blazor initializers'
+2023-11-01 17:50:53.404 -04:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 5.3923ms
+2023-11-01 17:50:53.406 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_blazor/initializers - 200 null application/json; charset=utf-8 12.2472ms
+2023-11-01 17:50:53.444 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/css/open-iconic/font/fonts/open-iconic.woff - null null
+2023-11-01 17:50:53.457 -04:00 [INF] Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\fonts\open-iconic.woff'
+2023-11-01 17:50:53.459 -04:00 [INF] HTTP GET /css/open-iconic/font/fonts/open-iconic.woff ({UserId}) responded 200 in 12.7806ms
+2023-11-01 17:50:53.467 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/css/open-iconic/font/fonts/open-iconic.woff - 200 14984 application/font-woff 23.2819ms
+2023-11-01 17:50:53.484 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-11-01 17:50:53.487 -04:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-11-01 17:50:53.498 -04:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-11-01 17:50:53.500 -04:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 13.4236ms
+2023-11-01 17:50:53.504 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 20.1069ms
+2023-11-01 17:50:53.531 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/favicon.png - null null
+2023-11-01 17:50:53.536 -04:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7233/_blazor?id=KuWqtSFUZZDJlURmghdtCA - null null
+2023-11-01 17:50:53.541 -04:00 [INF] Executing endpoint '/_blazor'
+2023-11-01 17:50:53.543 -04:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\favicon.png'
+2023-11-01 17:50:53.547 -04:00 [INF] HTTP GET /favicon.png ({UserId}) responded 200 in 13.6955ms
+2023-11-01 17:50:53.550 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/favicon.png - 200 1148 image/png 18.9788ms
+2023-11-01 17:50:53.660 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-01 17:50:53.662 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-11-01 17:50:53.666 -04:00 [INF] Retrieved tasks from the database.
+2023-11-01 17:50:53.667 -04:00 [INF] GetAllTasksAsync completed in 22.2 ms
+2023-11-01 17:50:53.703 -04:00 [INF] Request starting HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - null null
+2023-11-01 17:50:53.720 -04:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\QuickGrid.razor.js'
+2023-11-01 17:50:53.722 -04:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js ({UserId}) responded 200 in 16.4156ms
+2023-11-01 17:50:53.726 -04:00 [INF] Request finished HTTP/2 GET https://localhost:7233/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - 200 2563 text/javascript 23.2059ms
+2023-11-01 17:55:39.509 -04:00 [INF] Request starting HTTP/2 POST https://localhost:7233/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary6OffE78G32tD2swB 359
+2023-11-01 17:55:39.519 -04:00 [INF] Executing endpoint 'Blazor disconnect'
+2023-11-01 17:55:39.546 -04:00 [INF] Executed endpoint 'Blazor disconnect'
+2023-11-01 17:55:39.548 -04:00 [INF] HTTP POST /_blazor/disconnect ({UserId}) responded 200 in 29.6198ms
+2023-11-01 17:55:39.550 -04:00 [INF] Request finished HTTP/2 POST https://localhost:7233/_blazor/disconnect - 200 0 null 41.5185ms
+2023-11-01 17:55:39.578 -04:00 [INF] Executed endpoint '/_blazor'
+2023-11-01 17:55:39.579 -04:00 [INF] HTTP CONNECT /_blazor ({UserId}) responded 200 in 286039.3924ms
+2023-11-01 17:55:39.582 -04:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7233/_blazor?id=KuWqtSFUZZDJlURmghdtCA - 200 null null 286046.1265ms
+2023-11-01 17:55:46.360 -04:00 [INF] Application is shutting down...
+2023-11-02 12:57:09.026 -04:00 [INF] User profile is available. Using 'C:\Users\neilr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-02 12:57:10.077 -04:00 [INF] Now listening on: http://localhost:5058
+2023-11-02 12:57:10.079 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-02 12:57:10.079 -04:00 [INF] Hosting environment: Development
+2023-11-02 12:57:10.079 -04:00 [INF] Content root path: C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard
+2023-11-02 12:57:10.405 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/ - null null
+2023-11-02 12:57:10.435 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-11-02 12:57:10.466 -04:00 [INF] Executing endpoint '/_Host'
+2023-11-02 12:57:10.516 -04:00 [INF] Route matched with {page = "/_Host", area = ""}. Executing page /_Host
+2023-11-02 12:57:10.530 -04:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-11-02 12:57:10.530 -04:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-11-02 12:57:11.972 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-02 12:57:12.269 -04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-11-02 12:57:12.342 -04:00 [INF] Retrieved tasks from the database.
+2023-11-02 12:57:12.343 -04:00 [INF] GetAllTasksAsync completed in 1350.8 ms
+2023-11-02 12:57:12.449 -04:00 [INF] Executed page /_Host in 1929.7217ms
+2023-11-02 12:57:12.450 -04:00 [INF] Executed endpoint '/_Host'
+2023-11-02 12:57:12.452 -04:00 [INF] HTTP GET / ({UserId}) responded 200 in 2018.5795ms
+2023-11-02 12:57:12.467 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/css/site.css - null null
+2023-11-02 12:57:12.470 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/ - 200 null text/html; charset=utf-8 2067.2998ms
+2023-11-02 12:57:12.470 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/blazor_server_dashboard.styles.css - null null
+2023-11-02 12:57:12.471 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_framework/aspnetcore-browser-refresh.js - null null
+2023-11-02 12:57:12.472 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_framework/blazor.server.js - null null
+2023-11-02 12:57:12.474 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/_framework/aspnetcore-browser-refresh.js - 200 13311 application/javascript; charset=utf-8 2.8893ms
+2023-11-02 12:57:12.474 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/css/bootstrap/bootstrap.min.css - null null
+2023-11-02 12:57:12.478 -04:00 [INF] Executing endpoint 'Blazor static files'
+2023-11-02 12:57:12.494 -04:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\site.css'
+2023-11-02 12:57:12.494 -04:00 [INF] HTTP GET /css/site.css ({UserId}) responded 200 in 25.0919ms
+2023-11-02 12:57:12.495 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/css/site.css - 200 3235 text/css 28.2707ms
+2023-11-02 12:57:12.500 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/css/open-iconic/font/css/open-iconic-bootstrap.min.css - null null
+2023-11-02 12:57:12.502 -04:00 [INF] Sending file. Request path: '/blazor_server_dashboard.styles.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\obj\Debug\net8.0\scopedcss\bundle\blazor_server_dashboard.styles.css'
+2023-11-02 12:57:12.502 -04:00 [INF] HTTP GET /blazor_server_dashboard.styles.css ({UserId}) responded 200 in 28.1645ms
+2023-11-02 12:57:12.503 -04:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2023-11-02 12:57:12.503 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/blazor_server_dashboard.styles.css - 200 3159 text/css 32.6437ms
+2023-11-02 12:57:12.503 -04:00 [INF] Executed endpoint 'Blazor static files'
+2023-11-02 12:57:12.503 -04:00 [INF] HTTP GET /_framework/blazor.server.js ({UserId}) responded 200 in 28.9255ms
+2023-11-02 12:57:12.504 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/_framework/blazor.server.js - 200 147999 text/javascript 33.0356ms
+2023-11-02 12:57:12.504 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - null null
+2023-11-02 12:57:12.514 -04:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\bootstrap\bootstrap.min.css'
+2023-11-02 12:57:12.515 -04:00 [INF] HTTP GET /css/bootstrap/bootstrap.min.css ({UserId}) responded 200 in 40.3642ms
+2023-11-02 12:57:12.515 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/css/bootstrap/bootstrap.min.css - 200 162747 text/css 41.2739ms
+2023-11-02 12:57:12.516 -04:00 [INF] Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css'
+2023-11-02 12:57:12.516 -04:00 [INF] HTTP GET /css/open-iconic/font/css/open-iconic-bootstrap.min.css ({UserId}) responded 200 in 16.1957ms
+2023-11-02 12:57:12.520 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/css/open-iconic/font/css/open-iconic-bootstrap.min.css - 200 9395 text/css 17.2584ms
+2023-11-02 12:57:12.525 -04:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css'
+2023-11-02 12:57:12.525 -04:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css ({UserId}) responded 200 in 20.6051ms
+2023-11-02 12:57:12.526 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css - 200 8251 text/css 22.0666ms
+2023-11-02 12:57:12.534 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_blazor/initializers - null null
+2023-11-02 12:57:12.535 -04:00 [INF] Executing endpoint 'Blazor initializers'
+2023-11-02 12:57:12.539 -04:00 [INF] Executed endpoint 'Blazor initializers'
+2023-11-02 12:57:12.540 -04:00 [INF] HTTP GET /_blazor/initializers ({UserId}) responded 200 in 6.1638ms
+2023-11-02 12:57:12.542 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/_blazor/initializers - 200 null application/json; charset=utf-8 8.0229ms
+2023-11-02 12:57:12.584 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/css/open-iconic/font/fonts/open-iconic.woff - null null
+2023-11-02 12:57:12.603 -04:00 [INF] Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\css\open-iconic\font\fonts\open-iconic.woff'
+2023-11-02 12:57:12.604 -04:00 [INF] HTTP GET /css/open-iconic/font/fonts/open-iconic.woff ({UserId}) responded 200 in 18.2158ms
+2023-11-02 12:57:12.604 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/css/open-iconic/font/fonts/open-iconic.woff - 200 14984 application/font-woff 20.0551ms
+2023-11-02 12:57:12.605 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5058/_blazor/negotiate?negotiateVersion=1 - null 0
+2023-11-02 12:57:12.612 -04:00 [INF] Executing endpoint '/_blazor/negotiate'
+2023-11-02 12:57:12.628 -04:00 [INF] Executed endpoint '/_blazor/negotiate'
+2023-11-02 12:57:12.628 -04:00 [INF] HTTP POST /_blazor/negotiate ({UserId}) responded 200 in 23.1583ms
+2023-11-02 12:57:12.629 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5058/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 24.0563ms
+2023-11-02 12:57:12.659 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_blazor?id=16V1bU9zIUm7EinKPbyfiw - null null
+2023-11-02 12:57:12.660 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/favicon.png - null null
+2023-11-02 12:57:12.660 -04:00 [INF] Executing endpoint '/_blazor'
+2023-11-02 12:57:12.668 -04:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\neilr\OneDrive\professional\development\portfolio\blazor_server_dashboard\wwwroot\favicon.png'
+2023-11-02 12:57:12.669 -04:00 [INF] HTTP GET /favicon.png ({UserId}) responded 200 in 8.9600ms
+2023-11-02 12:57:12.671 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/favicon.png - 200 1148 image/png 10.3248ms
+2023-11-02 12:57:12.782 -04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-02 12:57:12.783 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedBy], [t].[AssignedTo], [t].[CompletionDate], [t].[Description], [t].[DueDate], [t].[Priority], [t].[StartDate]
+FROM [Tasks] AS [t]
+2023-11-02 12:57:12.788 -04:00 [INF] Retrieved tasks from the database.
+2023-11-02 12:57:12.788 -04:00 [INF] GetAllTasksAsync completed in 19.1 ms
+2023-11-02 12:57:12.814 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5058/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - null null
+2023-11-02 12:57:12.830 -04:00 [INF] Sending file. Request path: '/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js'. Physical path: 'C:\Users\neilr\.nuget\packages\microsoft.aspnetcore.components.quickgrid\8.0.0-rc.2.23480.2\staticwebassets\QuickGrid.razor.js'
+2023-11-02 12:57:12.830 -04:00 [INF] HTTP GET /_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js ({UserId}) responded 200 in 15.8783ms
+2023-11-02 12:57:12.830 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5058/_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js - 200 2563 text/javascript 16.3022ms
