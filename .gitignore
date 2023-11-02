@@ -42,4 +42,4 @@ obj
 .vs2022/Cache/
 .vs2022/Toolbox/
 
-./Logs
+Logs/
