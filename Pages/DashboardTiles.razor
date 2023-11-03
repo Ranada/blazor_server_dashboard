@@ -2,15 +2,15 @@
 
 <div class="d-flex flex-wrap">
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@(tasks?.Count(item => item.Priority == "Low"))</h3>
+        <h3>@(tasks?.Count(item => item.Priority.ToUpper() == "LOW"))</h3>
         <p>Low priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@(tasks?.Count(item => item.Priority == "Medium"))</h3>
+        <h3>@(tasks?.Count(item => item.Priority.ToUpper() == "MEDIUM"))</h3>
         <p>Medium priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">
-        <h3>@(tasks?.Count(item => item.Priority == "High"))</h3>
+        <h3>@(tasks?.Count(item => item.Priority.ToUpper() == "HIGH"))</h3>
         <p>High priority</p>
     </div>
     <div class="dashboard-tile shadow-sm border p-2 mb-3 me-3 rounded">

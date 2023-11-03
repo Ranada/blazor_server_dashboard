@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
+using System.Reflection.Emit;
 
 
 // Set up logger to monitor app startup
@@ -49,6 +50,17 @@ try
     {
         configure.MessageTemplate = "HTTP {RequestMethod} {RequestPath} ({UserId}) responded {StatusCode} in {Elapsed:0.0000}ms";
     });
+
+    //using (var serviceScope = app.Services.CreateScope())
+    //{
+    //    var dbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    //    if (dbContext.IsTasksTableEmpty())
+    //    {
+    //        // The Tasks table is empty, so add seed data.
+    //        SeedData.AddTasks(modelBuilder);
+    //    }
+    //}
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())

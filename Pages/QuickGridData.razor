@@ -3,7 +3,7 @@
 @using blazor_server_dashboard.Data.Models;
 
 <QuickGrid Items="@tasks">
-    <PropertyColumn Property="@(i => i.Id)" Sortable="true" />
+    @* <PropertyColumn Property="@(i => i.Id)" Sortable="true" /> *@
     <PropertyColumn Property="@(i => i.Description)" Sortable="true"/>
     <PropertyColumn Property="@(i => i.AssignedBy)" Sortable="true" />
     <PropertyColumn Property="@(i => i.AssignedTo)" Sortable="true" />

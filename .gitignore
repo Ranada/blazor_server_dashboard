@@ -20,7 +20,8 @@ artifacts/
 
 # Visual Studio for Mac
 .vscode/
-.idea/
+
+ea/
 
 # Rider
 .idea/

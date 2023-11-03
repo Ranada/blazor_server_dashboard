@@ -1,7 +1,9 @@
 ﻿@page "/"
-@using blazor_server_dashboard.Data.Models;
-@using blazor_server_dashboard.Services;
-@inject TaskService taskService;
+@* @using blazor_server_dashboard.Data.Models;
+@using blazor_server_dashboard.Services; *@
+
+@inject TaskService taskService
+@inject NavigationManager navigationManager
 
 <PageTitle>Index</PageTitle>
 
@@ -13,6 +15,9 @@
         </section>
         <section>
             <h3>Tracker list</h3>
+            <div class="d-flex justify-content-start mb-3">
+                <button class="btn btn-primary" @onclick="NavigateToFormPage">Add +</button>
+            </div>
             <QuickGridData />
         </section>
     </div>
@@ -25,5 +30,10 @@
     {
         var taskList = await taskService.GetAllTasksAsync();
         tasks = taskList.AsQueryable();
+    }
+
+    private void NavigateToFormPage()
+    {
+        navigationManager.NavigateTo("/addtask"); // Change "/form" to the actual URL of your form page
     }
 }

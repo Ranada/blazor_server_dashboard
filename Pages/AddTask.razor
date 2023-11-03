@@ -1,0 +1,73 @@
+﻿@page "/addtask"
+
+@inject TaskService taskService;
+@inject NavigationManager navigationManager
+@inject ILogger<TaskService> _logger;
+
+<h3>Add Task</h3>
+
+<EditForm Model="newTask" OnValidSubmit="AddNewTask">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="Description">Description:</label>
+        <InputText id="Description" class="form-control" @bind-Value="newTask.Description" />
+        @* <ValidationMessage For="() => newTask.Description" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="AssignedBy">Assigned By:</label>
+        <InputText id="AssignedBy" class="form-control" @bind-Value="newTask.AssignedBy" />
+        @* <ValidationMessage For="() => newTask.AssignedBy" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="AssignedTo">Assigned To:</label>
+        <InputText id="AssignedTo" class="form-control" @bind-Value="newTask.AssignedTo" />
+        @* <ValidationMessage For="() => newTask.AssignedTo" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="Priority">Priority:</label>
+        <InputText id="Priority" class="form-control" @bind-Value="newTask.Priority" />
+        @* <ValidationMessage For="() => newTask.Priority" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="StartDate">Start Date:</label>
+        <InputDate id="StartDate" class="form-control" @bind-Value="newTask.StartDate" />
+        @* <ValidationMessage For="() => newTask.StartDate" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="CompletionDate">Completion Date:</label>
+        <InputDate id="CompletionDate" class="form-control" @bind-Value="newTask.CompletionDate" />
+        @* <ValidationMessage For="() => newTask.CompletionDate" /> *@
+    </div>
+
+    <div class="form-group">
+        <label for="DueDate">Due Date:</label>
+        <InputDate id="DueDate" class="form-control" @bind-Value="newTask.DueDate" />
+        @* <ValidationMessage For="() => newTask.DueDate" /> *@
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Add Task</button>
+</EditForm>
+
+@code {
+    private TaskModel newTask = new TaskModel();
+
+    private async Task AddNewTask()
+    {
+        try
+        {
+            await taskService.AddTaskAsync(newTask);
+            navigationManager.NavigateTo("/"); // Redirect to the home page or any other page after adding
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error occurred while adding a task to the database.");
+            throw; // Rethrow the exception for proper error handling at the higher level.
+        }
+    }
+}
