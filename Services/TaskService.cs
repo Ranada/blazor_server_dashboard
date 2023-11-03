@@ -37,5 +37,23 @@ namespace blazor_server_dashboard.Services
                 throw; // Rethrow the exception for proper error handling at the higher level.
             }
         }
+
+        public async Task AddTaskAsync(TaskModel newTask)
+        {
+            try
+            {
+                using (Operation.Time(nameof(AddTaskAsync)))
+                {
+                    _appDbContext.Tasks.Add(newTask);
+                    await _appDbContext.SaveChangesAsync();
+                    _logger.LogInformation("Added a new task to the database.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while adding a new task to the database.");
+                throw; // Rethrow the exception for proper error handling at the higher level.
+            }
+        }
     }
 }

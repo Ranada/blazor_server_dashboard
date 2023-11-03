@@ -19,7 +19,8 @@ namespace blazor_server_dashboard.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetRoles", x => x.Id);
+                    table.PrimaryKey("PK_AspNetRoles", x => x
+                    );
                 });
 
             migrationBuilder.CreateTable(

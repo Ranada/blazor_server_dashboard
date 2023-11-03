@@ -1,9 +1,9 @@
 ﻿@page "/"
-@using blazor_server_dashboard.Data.Models;
-@using blazor_server_dashboard.Services;
+@* @using blazor_server_dashboard.Data.Models;
+@using blazor_server_dashboard.Services; *@
 
-@inject TaskService taskService;
-@inject NavigationManager NavigationManager
+@inject TaskService taskService
+@inject NavigationManager navigationManager
 
 <PageTitle>Index</PageTitle>
 
@@ -34,6 +34,6 @@
 
     private void NavigateToFormPage()
     {
-        NavigationManager.NavigateTo("/form"); // Change "/form" to the actual URL of your form page
+        navigationManager.NavigateTo("/addtask"); // Change "/form" to the actual URL of your form page
     }
 }

@@ -1,34 +1,51 @@
 ﻿using blazor_server_dashboard.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.ObjectPool;
 
 namespace blazor_server_dashboard.Data
 {
     public static class SeedData
     {
-        public static void AddTasks(ModelBuilder modelBuilder) 
-        {
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(1, "Sign security agreements", "Neil Ranada", "Katelyn Pham", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(2, "Review code", "Neil Ranada", "Neil Ranada", "Low", DateTime.Now, null, new DateOnly(2023, 11, 16))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(3, "Complete cybersecurity training", "Keisha Weiland", "Katelyn Pham", "Medium", DateTime.Now, new DateOnly(2023, 10, 01), new DateOnly(2023, 11, 16))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(4, "Audit security program", "Neil Ranada", "Billy Dietz", "Medium", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 11, 20))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(5, "Fix security vulnerability", "Keisha Weiland", "Diane Basham", "High", DateTime.Now, new DateOnly(2023, 10, 03), new DateOnly(2023, 11, 20))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(6, "Review and approve security plan", "Neil Ranada", "Tammy Wescott", "Medium", DateTime.Now, null, new DateOnly(2023, 12, 05))
-            );
-            modelBuilder.Entity<TaskModel>().HasData(
-               new TaskModel(7, "Find bugs", "Grace Hopper", "Neil Ranada", "Low", DateTime.Now, new DateOnly(2023, 10, 02), new DateOnly(2023, 12, 15))
-            );
+        public static string[] descriptions = { "Sign security agreements", "Review code", "Complete cybersecurity training", "Audit security program", "Fix security vulnerability", "Review and approve security plan" };
+        public static string[] names = { "Neil Ranada", "Katelyn Pham", "Keisha Weiland", "Billy Dietz", "Diane Basham", "Tammy Wescott" };
+        public static string[] priorities = { "low", "medium", "high" };
 
+        public static void AddTasks(ModelBuilder modelBuilder)
+        {
+            var random = new Random();
+
+            for (int i = 0; i < 10; i++)
+            {
+                var newTask = new TaskModel();
+                
+                newTask.Id = Guid.NewGuid();
+                newTask.Description = descriptions[random.Next(0, descriptions.Length) % descriptions.Length];
+                newTask.AssignedBy = names[random.Next(0, names.Length) % names.Length];
+                newTask.AssignedTo = names[random.Next(0, names.Length) % names.Length];
+                newTask.Priority = priorities[random.Next(0, priorities.Length) % priorities.Length];
+
+                var startDate = DateTime.Now;
+                newTask.StartDate = startDate;
+
+                int randomDays = random.Next(1, 31);     // Random days between 1 and 30
+                int randomMonths = random.Next(1, 13);   // Random months between 1 and 12
+                int randomYears = random.Next(0, 2);
+
+                newTask.DueDate = startDate
+                    .AddDays(randomDays)
+                    .AddMonths(randomMonths)
+                    .AddYears(randomYears);
+
+                Console.WriteLine($"{newTask.Description}" +
+                    $" {newTask.AssignedTo}" +
+                    $" {newTask.AssignedTo}" +
+                    $" {newTask.Priority}" +
+                    $" {newTask.StartDate}" +
+                    $" {newTask.CompletionDate}" +
+                    $" {newTask.DueDate}");
+
+                modelBuilder.Entity<TaskModel>().HasData(newTask);
+            }
         }
     }
 }

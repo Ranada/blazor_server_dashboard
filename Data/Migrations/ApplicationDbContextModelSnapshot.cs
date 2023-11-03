@@ -17,7 +17,7 @@ namespace blazor_server_dashboard.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0-rc.1.23419.6")
+                .HasAnnotation("ProductVersion", "8.0.0-rc.2.23480.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -226,11 +226,9 @@ namespace blazor_server_dashboard.Data.Migrations
 
             modelBuilder.Entity("blazor_server_dashboard.Data.Models.TaskModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("AssignedBy")
                         .HasColumnType("nvarchar(max)");
@@ -238,14 +236,14 @@ namespace blazor_server_dashboard.Data.Migrations
                     b.Property<string>("AssignedTo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly?>("CompletionDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime?>("CompletionDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateOnly?>("DueDate")
-                        .HasColumnType("date");
+                    b.Property<DateTime?>("DueDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Priority")
                         .HasColumnType("nvarchar(max)");
@@ -260,77 +258,103 @@ namespace blazor_server_dashboard.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
-                            AssignedBy = "Neil Ranada",
+                            Id = new Guid("ce3c917f-7d3c-41cd-8c1f-8d4593053093"),
+                            AssignedBy = "Keisha Weiland",
                             AssignedTo = "Katelyn Pham",
-                            Description = "Sign security agreements",
-                            DueDate = new DateOnly(2023, 11, 16),
-                            Priority = "Low",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(3761)
+                            Description = "Fix security vulnerability",
+                            DueDate = new DateTime(2024, 12, 13, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(3416),
+                            Priority = "medium",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(3416)
                         },
                         new
                         {
-                            Id = 2,
-                            AssignedBy = "Neil Ranada",
+                            Id = new Guid("9189defa-bb7e-47ca-96e1-f41ca1948bd6"),
+                            AssignedBy = "Keisha Weiland",
+                            AssignedTo = "Billy Dietz",
+                            Description = "Fix security vulnerability",
+                            DueDate = new DateTime(2025, 1, 4, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(3972),
+                            Priority = "high",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(3972)
+                        },
+                        new
+                        {
+                            Id = new Guid("625ce82d-896f-4ac1-a43e-0573ad36411c"),
+                            AssignedBy = "Diane Basham",
                             AssignedTo = "Neil Ranada",
                             Description = "Review code",
-                            DueDate = new DateOnly(2023, 11, 16),
-                            Priority = "Low",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(3954)
+                            DueDate = new DateTime(2024, 2, 22, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4034),
+                            Priority = "low",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4034)
                         },
                         new
                         {
-                            Id = 3,
+                            Id = new Guid("ad25424d-9d4a-45d6-9dc5-1eceecb0f838"),
+                            AssignedBy = "Katelyn Pham",
+                            AssignedTo = "Diane Basham",
+                            Description = "Sign security agreements",
+                            DueDate = new DateTime(2024, 9, 11, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4089),
+                            Priority = "high",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4089)
+                        },
+                        new
+                        {
+                            Id = new Guid("83697a92-a49e-498b-bc72-e07f6f18963d"),
                             AssignedBy = "Keisha Weiland",
-                            AssignedTo = "Katelyn Pham",
-                            CompletionDate = new DateOnly(2023, 10, 1),
+                            AssignedTo = "Tammy Wescott",
                             Description = "Complete cybersecurity training",
-                            DueDate = new DateOnly(2023, 11, 16),
-                            Priority = "Medium",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(4001)
+                            DueDate = new DateTime(2024, 11, 28, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4137),
+                            Priority = "medium",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4137)
                         },
                         new
                         {
-                            Id = 4,
-                            AssignedBy = "Neil Ranada",
+                            Id = new Guid("187ee924-d6b9-4f5e-a421-ccb937de901f"),
+                            AssignedBy = "Tammy Wescott",
+                            AssignedTo = "Tammy Wescott",
+                            Description = "Review code",
+                            DueDate = new DateTime(2024, 10, 5, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4236),
+                            Priority = "low",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4236)
+                        },
+                        new
+                        {
+                            Id = new Guid("b49484c4-e1eb-4e13-8005-117d472d9f2e"),
+                            AssignedBy = "Diane Basham",
                             AssignedTo = "Billy Dietz",
-                            CompletionDate = new DateOnly(2023, 10, 2),
-                            Description = "Audit security program",
-                            DueDate = new DateOnly(2023, 11, 20),
-                            Priority = "Medium",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(4041)
+                            Description = "Review and approve security plan",
+                            DueDate = new DateTime(2025, 2, 25, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4291),
+                            Priority = "high",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4291)
                         },
                         new
                         {
-                            Id = 5,
+                            Id = new Guid("6a056730-b742-44bd-9758-0907368353cf"),
+                            AssignedBy = "Neil Ranada",
+                            AssignedTo = "Neil Ranada",
+                            Description = "Sign security agreements",
+                            DueDate = new DateTime(2024, 7, 7, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4341),
+                            Priority = "low",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4341)
+                        },
+                        new
+                        {
+                            Id = new Guid("ffdc6120-ffb5-47c3-a0c3-e6d8d71db07a"),
                             AssignedBy = "Keisha Weiland",
                             AssignedTo = "Diane Basham",
-                            CompletionDate = new DateOnly(2023, 10, 3),
-                            Description = "Fix security vulnerability",
-                            DueDate = new DateOnly(2023, 11, 20),
-                            Priority = "High",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(4083)
+                            Description = "Sign security agreements",
+                            DueDate = new DateTime(2024, 11, 3, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4388),
+                            Priority = "high",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4388)
                         },
                         new
                         {
-                            Id = 6,
-                            AssignedBy = "Neil Ranada",
-                            AssignedTo = "Tammy Wescott",
-                            Description = "Review and approve security plan",
-                            DueDate = new DateOnly(2023, 12, 5),
-                            Priority = "Medium",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(4131)
-                        },
-                        new
-                        {
-                            Id = 7,
-                            AssignedBy = "Grace Hopper",
-                            AssignedTo = "Neil Ranada",
-                            CompletionDate = new DateOnly(2023, 10, 2),
-                            Description = "Find bugs",
-                            DueDate = new DateOnly(2023, 12, 15),
-                            Priority = "Low",
-                            StartDate = new DateTime(2023, 10, 9, 22, 30, 47, 151, DateTimeKind.Local).AddTicks(4171)
+                            Id = new Guid("21d637eb-b0c5-4290-8962-0765baedf7be"),
+                            AssignedBy = "Diane Basham",
+                            AssignedTo = "Billy Dietz",
+                            Description = "Audit security program",
+                            DueDate = new DateTime(2024, 11, 1, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4434),
+                            Priority = "high",
+                            StartDate = new DateTime(2023, 11, 2, 22, 30, 17, 75, DateTimeKind.Local).AddTicks(4434)
                         });
                 });
 
